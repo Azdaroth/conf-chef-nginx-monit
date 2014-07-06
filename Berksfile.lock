@@ -1,0 +1,13 @@
+DEPENDENCIES
+  monit-tlq
+    git: git@github.com:TalkingQuickly/monit-tlq.git
+    revision: c9651ddc15941cae5aa4234af387088e3b10cebd
+    branch: master
+  monit_configs-tlq
+    git: git@github.com:TalkingQuickly/monit_configs-tlq.git
+    revision: b2b61b9f62336e8c38830759e539576f289a1e74
+    branch: master
+
+GRAPH
+  monit-tlq (0.3.7)
+  monit_configs-tlq (0.0.6)

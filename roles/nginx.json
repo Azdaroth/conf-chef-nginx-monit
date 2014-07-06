@@ -1,0 +1,15 @@
+{
+  "name": "nginx-server",
+  "description": "Nginx server",
+  "default_attributes": {
+    "nginx": {
+      "worker_processes": "2"
+    }
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "nginx",
+    "monit_configs-tlq::nginx"
+  ],
+  "chef_type": "role"
+}

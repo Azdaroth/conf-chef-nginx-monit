@@ -1,0 +1,22 @@
+{
+  "name": "monit",
+  "description": "Monit",
+  "default_attributes": {
+    "monit": {
+      "notify_emails" : ["email@example.com"],
+      "enable_emails" : true,
+      "mailserver" : {
+        "host" : "smtp.gmail.com",
+        "port" : "587",
+        "username" : "email@example.com",
+        "password" : "password",
+        "hostname" : "hostname"
+      }
+    }
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "monit-tlq"
+  ],
+  "chef_type": "role"
+}
